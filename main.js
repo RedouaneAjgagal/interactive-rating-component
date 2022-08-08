@@ -11,7 +11,6 @@ sumbit.addEventListener("click", () => {
 // Add selected rating value on thank you page
 btn.forEach(element => {
     element.addEventListener("click", () => {
-        btn.innerHTML = element.innerHTML;
-        rate.innerHTML = btn.innerHTML;
+        rate.innerHTML = element.innerHTML;
     })
 });
