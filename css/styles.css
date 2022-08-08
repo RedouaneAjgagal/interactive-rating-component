@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    color: #fff;
+    background-color: #1b1b1b;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+.rating, .thank-you {
+    max-width: 30rem;
+    background-color: #1e2630;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    min-height: 28rem;
+    box-shadow: 0 0.5rem 1.5rem #181717;
+}
+.rating {
+    display: inline;
+}
+.rating img{
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #2a3542;
+    margin-bottom: 1.5rem;
+}
+.qs p {
+    color: #aab0b8;
+    line-height: 1.7;
+    padding: 1rem 0;
+}
+.rates {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+.rates button{
+    padding: 1rem 1.3rem;
+    border-radius: 100%;
+    background-color: #2a3542;
+    border: none;
+    color: #aab0b8;
+}
+.rates button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.rates button:focus {
+    background-color: #aab0b8;
+    color: #fff;
+}
+.rating > button {
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    margin-top: 2rem;
+    width: 100%;
+    transition: .2s ease-in-out;
+    border: none;
+}
+.rating > button:hover {
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+/* Thank you page */
+.hidden {
+    display: none;
+}
+.thank-you {
+    text-align: center;
+}
+.result p {
+    padding: 0.4rem 1rem;
+    background-color: #2a3542;
+    display: inline-block;
+    color: hsl(25, 97%, 53%);
+    border-radius: 5rem;
+    margin: 2rem 0;
+}
+.ans h2 {
+    font-size: 1.8rem;
+}
+.ans p {
+    color: #aab0b8;
+    line-height: 1.7;
+    padding: 1rem 0;
+}
+/* media query */
+@media (max-width: 424px) {
+    .rating, .thank-you {
+        padding: 2.5rem 1.5rem;
+    }
+    .rates {
+        gap: 0.3rem;
+    }
+}
